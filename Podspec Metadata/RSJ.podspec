@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 s.name         = "RSJ"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "A toolset to make swift coding easier"
 
 s.homepage     = "https://github.com/rynssnjn/RSJ"
@@ -20,6 +20,9 @@ s.author             = { "Rael San Juan" => "rynssnjn.git@gmail.com" }
 # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 s.platform     = :ios, "9.3"
+
+#  When using multiple platforms
+s.ios.deployment_target = "9.3"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
