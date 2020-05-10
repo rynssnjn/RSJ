@@ -11,7 +11,7 @@ s.homepage     = "https://github.com/rynssnjn/RSJ"
 
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.license      = { :type => "MIT", :file => "LICENSE.md" }
+s.license      = "MIT"
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
