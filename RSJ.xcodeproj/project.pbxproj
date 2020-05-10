@@ -10,6 +10,32 @@
 		8E020F672467D10F00CAC024 /* RSJ.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E020F652467D10F00CAC024 /* RSJ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E020F702467D32B00CAC024 /* RSJ.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8E020F6F2467D32B00CAC024 /* RSJ.podspec */; };
 		8E020F732467D51600CAC024 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F722467D51600CAC024 /* Coordinator.swift */; };
+		8E020F752467D9B300CAC024 /* AbstractCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F742467D9B300CAC024 /* AbstractCoordinator.swift */; };
+		8E020F782467DA1700CAC024 /* RSJDebuggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F772467DA1700CAC024 /* RSJDebuggable.swift */; };
+		8E020F7A2467DA9E00CAC024 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E020F792467DA9E00CAC024 /* LICENSE.md */; };
+		8E020F7D2467DAF500CAC024 /* RSJObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F7C2467DAF500CAC024 /* RSJObject.swift */; };
+		8E020F7F2467DC6400CAC024 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F7E2467DC6400CAC024 /* AppCoordinator.swift */; };
+		8E020F812467DC8700CAC024 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F802467DC8700CAC024 /* TabBarCoordinator.swift */; };
+		8E020F832467DCA000CAC024 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F822467DCA000CAC024 /* TabCoordinator.swift */; };
+		8E020F852467DCB900CAC024 /* AnyTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F842467DCB900CAC024 /* AnyTabCoordinator.swift */; };
+		8E020F872467DCE400CAC024 /* RSJView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F862467DCE400CAC024 /* RSJView.swift */; };
+		8E020F892467DD2F00CAC024 /* RSJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F882467DD2F00CAC024 /* RSJViewController.swift */; };
+		8E020F8B2467DD8500CAC024 /* RSJActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F8A2467DD8500CAC024 /* RSJActivityIndicatorView.swift */; };
+		8E020F8F2467DE3400CAC024 /* AppNetworkActivityIndicatorInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F8E2467DE3400CAC024 /* AppNetworkActivityIndicatorInjected.swift */; };
+		8E020F912467DEA200CAC024 /* DecodingErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F902467DEA200CAC024 /* DecodingErrorHandling.swift */; };
+		8E020F942467DF0300CAC024 /* UIView+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F932467DF0300CAC024 /* UIView+RSJ.swift */; };
+		8E020F962467DF5900CAC024 /* UIViewController+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F952467DF5900CAC024 /* UIViewController+RSJ.swift */; };
+		8E020F982467DFCA00CAC024 /* UIColor+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F972467DFCA00CAC024 /* UIColor+RSJ.swift */; };
+		8E020F9A2467E01300CAC024 /* String+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F992467E01300CAC024 /* String+RSJ.swift */; };
+		8E020F9C2467E05A00CAC024 /* Double+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F9B2467E05A00CAC024 /* Double+RSJ.swift */; };
+		8E020F9E2467E11200CAC024 /* Float+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F9D2467E11200CAC024 /* Float+RSJ.swift */; };
+		8E020FA02467E14800CAC024 /* CGFloat+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F9F2467E14800CAC024 /* CGFloat+RSJ.swift */; };
+		8E020FA22467E17A00CAC024 /* Int+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA12467E17A00CAC024 /* Int+RSJ.swift */; };
+		8E020FA42467E1C200CAC024 /* UInt+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA32467E1C200CAC024 /* UInt+RSJ.swift */; };
+		8E020FA62467E1EB00CAC024 /* Date+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */; };
+		8E020FA82467E22B00CAC024 /* CGRect+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */; };
+		8E020FAA2467E25700CAC024 /* Sequence+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA92467E25700CAC024 /* Sequence+RSJ.swift */; };
+		8E020FAC2467E27E00CAC024 /* Bool+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +44,32 @@
 		8E020F662467D10F00CAC024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E020F6F2467D32B00CAC024 /* RSJ.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RSJ.podspec; sourceTree = "<group>"; };
 		8E020F722467D51600CAC024 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8E020F742467D9B300CAC024 /* AbstractCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
+		8E020F772467DA1700CAC024 /* RSJDebuggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSJDebuggable.swift; sourceTree = "<group>"; };
+		8E020F792467DA9E00CAC024 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		8E020F7C2467DAF500CAC024 /* RSJObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSJObject.swift; sourceTree = "<group>"; };
+		8E020F7E2467DC6400CAC024 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8E020F802467DC8700CAC024 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		8E020F822467DCA000CAC024 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		8E020F842467DCB900CAC024 /* AnyTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTabCoordinator.swift; sourceTree = "<group>"; };
+		8E020F862467DCE400CAC024 /* RSJView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSJView.swift; sourceTree = "<group>"; };
+		8E020F882467DD2F00CAC024 /* RSJViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSJViewController.swift; sourceTree = "<group>"; };
+		8E020F8A2467DD8500CAC024 /* RSJActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSJActivityIndicatorView.swift; sourceTree = "<group>"; };
+		8E020F8E2467DE3400CAC024 /* AppNetworkActivityIndicatorInjected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetworkActivityIndicatorInjected.swift; sourceTree = "<group>"; };
+		8E020F902467DEA200CAC024 /* DecodingErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingErrorHandling.swift; sourceTree = "<group>"; };
+		8E020F932467DF0300CAC024 /* UIView+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RSJ.swift"; sourceTree = "<group>"; };
+		8E020F952467DF5900CAC024 /* UIViewController+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+RSJ.swift"; sourceTree = "<group>"; };
+		8E020F972467DFCA00CAC024 /* UIColor+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RSJ.swift"; sourceTree = "<group>"; };
+		8E020F992467E01300CAC024 /* String+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RSJ.swift"; sourceTree = "<group>"; };
+		8E020F9B2467E05A00CAC024 /* Double+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+RSJ.swift"; sourceTree = "<group>"; };
+		8E020F9D2467E11200CAC024 /* Float+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+RSJ.swift"; sourceTree = "<group>"; };
+		8E020F9F2467E14800CAC024 /* CGFloat+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+RSJ.swift"; sourceTree = "<group>"; };
+		8E020FA12467E17A00CAC024 /* Int+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+RSJ.swift"; sourceTree = "<group>"; };
+		8E020FA32467E1C200CAC024 /* UInt+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt+RSJ.swift"; sourceTree = "<group>"; };
+		8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+RSJ.swift"; sourceTree = "<group>"; };
+		8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+RSJ.swift"; sourceTree = "<group>"; };
+		8E020FA92467E25700CAC024 /* Sequence+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+RSJ.swift"; sourceTree = "<group>"; };
+		8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+RSJ.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +103,9 @@
 		8E020F642467D10F00CAC024 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8E020F922467DEF300CAC024 /* Extensions */,
+				8E020F7B2467DAD400CAC024 /* Classes */,
+				8E020F762467DA0D00CAC024 /* Protocols */,
 				8E020F712467D4FA00CAC024 /* Coordinators */,
 				8E020F6D2467D21400CAC024 /* Supporting Files */,
 			);
@@ -70,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				8E020F6F2467D32B00CAC024 /* RSJ.podspec */,
+				8E020F792467DA9E00CAC024 /* LICENSE.md */,
 			);
 			path = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -78,8 +134,54 @@
 			isa = PBXGroup;
 			children = (
 				8E020F722467D51600CAC024 /* Coordinator.swift */,
+				8E020F742467D9B300CAC024 /* AbstractCoordinator.swift */,
+				8E020F7E2467DC6400CAC024 /* AppCoordinator.swift */,
+				8E020F802467DC8700CAC024 /* TabBarCoordinator.swift */,
+				8E020F822467DCA000CAC024 /* TabCoordinator.swift */,
+				8E020F842467DCB900CAC024 /* AnyTabCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8E020F762467DA0D00CAC024 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8E020F772467DA1700CAC024 /* RSJDebuggable.swift */,
+				8E020F8E2467DE3400CAC024 /* AppNetworkActivityIndicatorInjected.swift */,
+				8E020F902467DEA200CAC024 /* DecodingErrorHandling.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8E020F7B2467DAD400CAC024 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8E020F7C2467DAF500CAC024 /* RSJObject.swift */,
+				8E020F862467DCE400CAC024 /* RSJView.swift */,
+				8E020F882467DD2F00CAC024 /* RSJViewController.swift */,
+				8E020F8A2467DD8500CAC024 /* RSJActivityIndicatorView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8E020F922467DEF300CAC024 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E020F932467DF0300CAC024 /* UIView+RSJ.swift */,
+				8E020F952467DF5900CAC024 /* UIViewController+RSJ.swift */,
+				8E020F972467DFCA00CAC024 /* UIColor+RSJ.swift */,
+				8E020F992467E01300CAC024 /* String+RSJ.swift */,
+				8E020F9B2467E05A00CAC024 /* Double+RSJ.swift */,
+				8E020F9D2467E11200CAC024 /* Float+RSJ.swift */,
+				8E020F9F2467E14800CAC024 /* CGFloat+RSJ.swift */,
+				8E020FA12467E17A00CAC024 /* Int+RSJ.swift */,
+				8E020FA32467E1C200CAC024 /* UInt+RSJ.swift */,
+				8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */,
+				8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */,
+				8E020FA92467E25700CAC024 /* Sequence+RSJ.swift */,
+				8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E020F7A2467DA9E00CAC024 /* LICENSE.md in Resources */,
 				8E020F702467D32B00CAC024 /* RSJ.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +266,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E020F9E2467E11200CAC024 /* Float+RSJ.swift in Sources */,
+				8E020FA42467E1C200CAC024 /* UInt+RSJ.swift in Sources */,
+				8E020F9C2467E05A00CAC024 /* Double+RSJ.swift in Sources */,
+				8E020F9A2467E01300CAC024 /* String+RSJ.swift in Sources */,
+				8E020FA22467E17A00CAC024 /* Int+RSJ.swift in Sources */,
+				8E020FAC2467E27E00CAC024 /* Bool+RSJ.swift in Sources */,
+				8E020F892467DD2F00CAC024 /* RSJViewController.swift in Sources */,
+				8E020F912467DEA200CAC024 /* DecodingErrorHandling.swift in Sources */,
+				8E020F942467DF0300CAC024 /* UIView+RSJ.swift in Sources */,
+				8E020F982467DFCA00CAC024 /* UIColor+RSJ.swift in Sources */,
+				8E020F7D2467DAF500CAC024 /* RSJObject.swift in Sources */,
+				8E020F872467DCE400CAC024 /* RSJView.swift in Sources */,
+				8E020F8F2467DE3400CAC024 /* AppNetworkActivityIndicatorInjected.swift in Sources */,
+				8E020FA02467E14800CAC024 /* CGFloat+RSJ.swift in Sources */,
+				8E020FA82467E22B00CAC024 /* CGRect+RSJ.swift in Sources */,
+				8E020F832467DCA000CAC024 /* TabCoordinator.swift in Sources */,
+				8E020F8B2467DD8500CAC024 /* RSJActivityIndicatorView.swift in Sources */,
+				8E020F782467DA1700CAC024 /* RSJDebuggable.swift in Sources */,
+				8E020F962467DF5900CAC024 /* UIViewController+RSJ.swift in Sources */,
+				8E020F812467DC8700CAC024 /* TabBarCoordinator.swift in Sources */,
+				8E020F7F2467DC6400CAC024 /* AppCoordinator.swift in Sources */,
+				8E020FAA2467E25700CAC024 /* Sequence+RSJ.swift in Sources */,
+				8E020F852467DCB900CAC024 /* AnyTabCoordinator.swift in Sources */,
+				8E020FA62467E1EB00CAC024 /* Date+RSJ.swift in Sources */,
+				8E020F752467D9B300CAC024 /* AbstractCoordinator.swift in Sources */,
 				8E020F732467D51600CAC024 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -300,7 +428,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RSJ/Info.plist;
+				INFOPLIST_FILE = "Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,7 +454,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RSJ/Info.plist;
+				INFOPLIST_FILE = "Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
