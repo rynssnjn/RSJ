@@ -1,5 +1,5 @@
 
-Pod::Spec.new do |spec|
+Pod::Spec.new do |s|
 
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -23,7 +23,7 @@ s.platform     = :ios, "9.3"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.source       = = { :git => "https://github.com/rynssnjn/RSJ.git", :tag => s.version.to_s }
+s.source       = { :git => "https://github.com/rynssnjn/RSJ.git" }
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
