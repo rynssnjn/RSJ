@@ -11,7 +11,7 @@ s.homepage     = "https://github.com/rynssnjn/RSJ"
 
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.license      = "MIT"
+s.license      = "{ :type => "MIT", :file => "LICENSE.md" }"
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -20,6 +20,9 @@ s.author             = { "Rael San Juan" => "rynssnjn.git@gmail.com" }
 # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 s.platform     = :ios, "9.3"
+
+#  When using multiple platforms
+s.ios.deployment_target = "9.3"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
