@@ -23,7 +23,7 @@ s.platform     = :ios, "9.3"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.source       = { :git => "https://github.com/rynssnjn/RSJ.git" }
+s.source       =  { :git => "https://github.com/rynssnjn/RSJ.git", :tag => s.version.to_s }
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
