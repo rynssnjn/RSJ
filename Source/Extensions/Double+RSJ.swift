@@ -9,19 +9,19 @@
 import struct CoreGraphics.CGFloat
 
 /**
- A DSL for Double to access custom methods
+ A Domain Specific Language for Double to access custom methods
 */
-public struct RSJDoubleDSL {
+public struct RSJDoubleSpecific {
 
     // MARK: Stored Propeties
     /**
-     Underlying Double instance
+     Specific Double instance
     */
     public let double: Double
 
 }
 
-public extension RSJDoubleDSL {
+public extension RSJDoubleSpecific {
 
     /**
      Double as a String
@@ -119,10 +119,10 @@ public extension RSJDoubleDSL {
 public extension Double {
 
     /**
-     RSJDoubleDSL instance to access custom methods
+     RSJDoubleSpecific instance to access custom methods
     */
-    var rsj: RSJDoubleDSL {
-        return RSJDoubleDSL(double: self)
+    var rsj: RSJDoubleSpecific {
+        return RSJDoubleSpecific(double: self)
     }
 
 }

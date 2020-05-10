@@ -13,19 +13,19 @@ import struct Foundation.NSRange
 import class Foundation.NSTextCheckingResult
 
 /**
- A DSL for String to access custom methods
+ A Domain Specific Language for String to access custom methods
 */
-public struct RSJStringDSL {
+public struct RSJStringSpecific {
 
     // MARK: Stored Propeties
     /**
-     Underlying String instance
+     Specific String instance
     */
     public let string: String
 
 }
 
-public extension RSJStringDSL {
+public extension RSJStringSpecific {
     /**
      Checks if string contains a number
     */
@@ -144,9 +144,9 @@ public extension RSJStringDSL {
 public extension String {
 
     /**
-     RSJDoubleDSL instance to access custom methods
+     RSJStringSpecific instance to access custom methods
     */
-    var rsj: RSJStringDSL {
-        return RSJStringDSL(string: self)
+    var rsj: RSJStringSpecific {
+        return RSJStringSpecific(string: self)
     }
 }

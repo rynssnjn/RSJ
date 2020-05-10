@@ -10,13 +10,13 @@ import Foundation.NSObject
 
 open class RSJObject: NSObject, RSJDebuggable {
     deinit {
-        self.logMessage()
+        self.log()
     }
 }
 
 public extension RSJDebuggable where Self: NSObject {
 
-    func logMessage() {
+    func log() {
         print("\(type(of: self)) deallocated")
     }
 

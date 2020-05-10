@@ -11,9 +11,9 @@ import struct CoreGraphics.CGFloat
 import struct CoreGraphics.CGPoint
 
 /**
- A DSL for CGRect to access custom methods
+ A Domain Specific Language for CGRect to access custom methods
  */
-public struct RSJCGRectDSL {
+public struct RSJCGRectSpecific {
 
     // MARK: Stored Propeties
     /**
@@ -23,7 +23,7 @@ public struct RSJCGRectDSL {
 
 }
 
-public extension RSJCGRectDSL {
+public extension RSJCGRectSpecific {
 
     /**
      The coordinate of the left bottom point of the CGRect
@@ -100,9 +100,9 @@ public extension RSJCGRectDSL {
 public extension CGRect {
 
     /**
-     RSJCGRectDSL instance to access custom methods
+     RSJCGRectSpecific instance to access custom methods
      */
-    var rsj: RSJCGRectDSL {
-        return RSJCGRectDSL(rect: self)
+    var rsj: RSJCGRectSpecific {
+        return RSJCGRectSpecific(rect: self)
     }
 }

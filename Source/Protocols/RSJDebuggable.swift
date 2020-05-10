@@ -9,7 +9,7 @@
 public protocol RSJDebuggable: class {
 
     /**
-     Debug messgae printed on the console
+     Debug message printed on the console
     */
-    func logMessage()
+    func log()
 }

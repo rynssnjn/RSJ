@@ -12,9 +12,9 @@ import struct Foundation.Date
 import struct Foundation.DateComponents
 
 /**
- A DSL for Date to access custom methods
+ A Domain Specific Language for Date to access custom methods
 */
-public struct RSJDateDSL {
+public struct RSJDateSpecific {
 
     // MARK: Static Properties
     /**
@@ -32,7 +32,7 @@ public struct RSJDateDSL {
     public static let calendar: Calendar = {
         var calendar: Calendar = Calendar.autoupdatingCurrent
         calendar.firstWeekday = 1
-        calendar.timeZone = RSJDateDSL.timeZone
+        calendar.timeZone = RSJDateSpecific.timeZone
         return calendar
     }()
 
@@ -76,12 +76,12 @@ public struct RSJDateDSL {
 
 }
 
-public extension RSJDateDSL {
+public extension RSJDateSpecific {
     /**
      Returns the 0:00 Date of the underlying Date. In UTC TimeZone.
     */
     var startOfDay: Date {
-        return RSJDateDSL.calendar.startOfDay(for: self.date)
+        return RSJDateSpecific.calendar.startOfDay(for: self.date)
     }
 
     /**
@@ -91,7 +91,7 @@ public extension RSJDateDSL {
         var components = DateComponents()
         components.day = 1
         components.second = -1
-        return RSJDateDSL.calendar.date(byAdding: components, to: self.startOfDay)!
+        return RSJDateSpecific.calendar.date(byAdding: components, to: self.startOfDay)!
     }
 
     /**
@@ -99,10 +99,10 @@ public extension RSJDateDSL {
      same date is returned with a midnight time.
      - parameter weekday: The weekday of the date that will be returned
     */
-    func date(ofPastWeekday weekday: RSJDateDSL.Weekdays) -> Date {
+    func date(ofPastWeekday weekday: RSJDateSpecific.Weekdays) -> Date {
         var calendar: Calendar = Calendar.autoupdatingCurrent
         calendar.firstWeekday = weekday.rawValue
-        calendar.timeZone = RSJDateDSL.timeZone
+        calendar.timeZone = RSJDateSpecific.timeZone
 
         let currentDateComponents: DateComponents = calendar.dateComponents(
             [Calendar.Component.yearForWeekOfYear, Calendar.Component.weekOfYear],
@@ -115,9 +115,9 @@ public extension RSJDateDSL {
 
 public extension Date {
     /**
-     RSJDateDSL instance to access custom methods
+     RSJDateSpecific instance to access custom methods
     */
-    var rsj: RSJDateDSL {
-        return RSJDateDSL(date: self)
+    var rsj: RSJDateSpecific {
+        return RSJDateSpecific(date: self)
     }
 }

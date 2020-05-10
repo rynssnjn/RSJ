@@ -29,10 +29,8 @@
 		8E020F9E2467E11200CAC024 /* Float+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F9D2467E11200CAC024 /* Float+RSJ.swift */; };
 		8E020FA02467E14800CAC024 /* CGFloat+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F9F2467E14800CAC024 /* CGFloat+RSJ.swift */; };
 		8E020FA22467E17A00CAC024 /* Int+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA12467E17A00CAC024 /* Int+RSJ.swift */; };
-		8E020FA42467E1C200CAC024 /* UInt+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA32467E1C200CAC024 /* UInt+RSJ.swift */; };
 		8E020FA62467E1EB00CAC024 /* Date+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */; };
 		8E020FA82467E22B00CAC024 /* CGRect+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */; };
-		8E020FAA2467E25700CAC024 /* Sequence+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA92467E25700CAC024 /* Sequence+RSJ.swift */; };
 		8E020FAC2467E27E00CAC024 /* Bool+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,10 +59,8 @@
 		8E020F9D2467E11200CAC024 /* Float+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+RSJ.swift"; sourceTree = "<group>"; };
 		8E020F9F2467E14800CAC024 /* CGFloat+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FA12467E17A00CAC024 /* Int+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+RSJ.swift"; sourceTree = "<group>"; };
-		8E020FA32467E1C200CAC024 /* UInt+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+RSJ.swift"; sourceTree = "<group>"; };
-		8E020FA92467E25700CAC024 /* Sequence+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+RSJ.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,10 +157,8 @@
 				8E020F9D2467E11200CAC024 /* Float+RSJ.swift */,
 				8E020F9F2467E14800CAC024 /* CGFloat+RSJ.swift */,
 				8E020FA12467E17A00CAC024 /* Int+RSJ.swift */,
-				8E020FA32467E1C200CAC024 /* UInt+RSJ.swift */,
 				8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */,
 				8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */,
-				8E020FA92467E25700CAC024 /* Sequence+RSJ.swift */,
 				8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */,
 			);
 			path = Extensions;
@@ -251,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E020F9E2467E11200CAC024 /* Float+RSJ.swift in Sources */,
-				8E020FA42467E1C200CAC024 /* UInt+RSJ.swift in Sources */,
 				8E020F9C2467E05A00CAC024 /* Double+RSJ.swift in Sources */,
 				8E020F9A2467E01300CAC024 /* String+RSJ.swift in Sources */,
 				8E020FA22467E17A00CAC024 /* Int+RSJ.swift in Sources */,
@@ -271,7 +264,6 @@
 				8E020F962467DF5900CAC024 /* UIViewController+RSJ.swift in Sources */,
 				8E020F812467DC8700CAC024 /* TabBarCoordinator.swift in Sources */,
 				8E020F7F2467DC6400CAC024 /* AppCoordinator.swift in Sources */,
-				8E020FAA2467E25700CAC024 /* Sequence+RSJ.swift in Sources */,
 				8E020F852467DCB900CAC024 /* AnyTabCoordinator.swift in Sources */,
 				8E020FA62467E1EB00CAC024 /* Date+RSJ.swift in Sources */,
 				8E020F752467D9B300CAC024 /* AbstractCoordinator.swift in Sources */,

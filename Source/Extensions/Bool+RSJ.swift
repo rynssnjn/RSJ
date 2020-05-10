@@ -9,9 +9,9 @@
 import Foundation
 
 /**
- A DSL for Bool to access custom methods
+ A Domain Specific Language for Bool to access custom methods
  */
-public struct RSJBoolDSL {
+public struct RSJBoolSpecific {
 
     // MARK: Stored Propeties
     /**
@@ -21,7 +21,7 @@ public struct RSJBoolDSL {
 
 }
 
-public extension RSJBoolDSL {
+public extension RSJBoolSpecific {
 
     /**
      Bool is true
@@ -41,9 +41,9 @@ public extension RSJBoolDSL {
 public extension Bool {
 
     /**
-     KioIntDSL instance to access custom methods
+     RSJBoolSpecific instance to access custom methods
      */
-    var rsj: RSJBoolDSL {
-        return RSJBoolDSL(bool: self)
+    var rsj: RSJBoolSpecific {
+        return RSJBoolSpecific(bool: self)
     }
 }

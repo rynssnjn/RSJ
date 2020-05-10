@@ -21,28 +21,38 @@ import struct CoreGraphics.CGSize
 import class Foundation.DispatchQueue
 
 /**
- A DSL for UIViewController to access custom methods
+ A Domain Specific Language for UIViewController to access custom methods
 */
-public struct RSJViewControllerDSL {
+public struct RSJViewControllerSpecific {
 
     // MARK: Stored Propeties
     /**
-     Underlying UIViewController instance
+     Specific UIViewController instance
      */
-    public let viewController: UIViewController
+    public let vc: UIViewController
 
 }
 
-public extension RSJViewControllerDSL {
+public extension RSJViewControllerSpecific {
 
+    /**
+     Adds child view controller to parent
+
+     - Parameter childViewController: The view controller to be added.
+     */
     func add(child childViewController: UIViewController) {
-        self.viewController.addChild(childViewController)
-        childViewController.didMove(toParent: self.viewController)
-        self.viewController.view.addSubview(childViewController.view)
+        self.vc.addChild(childViewController)
+        childViewController.didMove(toParent: self.vc)
+        self.vc.view.addSubview(childViewController.view)
     }
 
+    /**
+     Removes child view controller to super view
+
+     - Parameter childViewController: The view controller to be removed.
+     */
     func remove(child childViewController: UIViewController) {
-        guard childViewController.parent === self.viewController else { return }
+        guard childViewController.parent === self.vc else { return }
 
         childViewController.willMove(toParent: nil)
         childViewController.removeFromParent()
@@ -51,15 +61,15 @@ public extension RSJViewControllerDSL {
 
     /**
      Accesses the UIViewController's UINavigationItem instance to manipulate inside a closure.
-     - parameter callback: The closure that captures the UINavigationItem instance to be manipulated
+     - Parameter callback: The closure that captures the UINavigationItem instance to be manipulated
      */
     func setUpNavigationItem(_ callback: (UINavigationItem) -> Void) {
-        callback(self.viewController.navigationItem)
+        callback(self.vc.navigationItem)
     }
 
     /**
      Convenience method that assigns a selector method to a UIControl instance
-     - parameter dict: The dictionary containing the UIControl and Selector pairing
+     - Parameter dict: The dictionary containing the UIControl and Selector pairing
      */
     func setUpTargetActions(with dict: [UIControl: Selector]) {
 
@@ -75,7 +85,7 @@ public extension RSJViewControllerDSL {
                     controlEvent = UIControl.Event.touchUpInside
             }
 
-            control.addTarget(self.viewController, action: action, for: controlEvent)
+            control.addTarget(self.vc, action: action, for: controlEvent)
         }
     }
 
@@ -86,10 +96,10 @@ public extension RSJViewControllerDSL {
         view.hidesWhenStopped = true
         view.rsj.cornerRadius(of: 5.0)
 
-        self.viewController.view.addSubview(view)
+        self.vc.view.addSubview(view)
         NSLayoutConstraint.activate([
-            view.centerXAnchor.constraint(equalTo: self.viewController.view.centerXAnchor),
-            view.centerYAnchor.constraint(equalTo: self.viewController.view.centerYAnchor),
+            view.centerXAnchor.constraint(equalTo: self.vc.view.centerXAnchor),
+            view.centerYAnchor.constraint(equalTo: self.vc.view.centerYAnchor),
             view.heightAnchor.constraint(equalToConstant: size.height),
             view.widthAnchor.constraint(equalToConstant: size.width)
         ])
@@ -97,7 +107,7 @@ public extension RSJViewControllerDSL {
     }
 
     private func findActivityIndicator() -> RSJActivityIndicatorView? {
-        return self.viewController.view.subviews.reversed()
+        return self.vc.view.subviews.reversed()
             .first(where: { (view: UIView) -> Bool in view is RSJActivityIndicatorView}) as? RSJActivityIndicatorView
     }
 
@@ -106,7 +116,7 @@ public extension RSJViewControllerDSL {
             self.createActivityIndicator(with: size)
                 .startAnimating()
 
-            self.viewController.view.isUserInteractionEnabled = false
+            self.vc.view.isUserInteractionEnabled = false
         }
     }
 
@@ -116,7 +126,7 @@ public extension RSJViewControllerDSL {
 
             view.stopAnimating()
             view.removeFromSuperview()
-            self.viewController.view.isUserInteractionEnabled = true
+            self.vc.view.isUserInteractionEnabled = true
         }
     }
 
@@ -124,9 +134,9 @@ public extension RSJViewControllerDSL {
 
 public extension UIViewController {
     /**
-     RSJViewControllerDSL instance to access custom methods
+     RSJViewControllerSpecific instance to access custom methods
     */
-    var rsj: RSJViewControllerDSL {
-        return RSJViewControllerDSL(viewController: self)
+    var rsj: RSJViewControllerSpecific {
+        return RSJViewControllerSpecific(vc: self)
     }
 }

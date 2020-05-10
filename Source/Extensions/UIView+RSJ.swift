@@ -10,24 +10,24 @@ import class UIKit.UIView
 import struct CoreGraphics.CGFloat
 
 /**
- A DSL for UIView to access custom methods
+ A Domain Specific Language for UIView to access custom methods
 */
-public struct RSJViewDSL {
+public struct RSJViewSpecific {
 
     // MARK: Stored Propeties
     /**
-     Underlying UIView instance
+     Specific UIView instance
     */
     public let view: UIView
 
 }
 
-public extension RSJViewDSL {
+public extension RSJViewSpecific {
 
     /**
      Adds subview and sets translatesAutoresizingMaskIntoConstraints to false.
 
-     - parameter subview: The subview to add and prepare for AutoLayout.
+     - Parameter subview: The subview to be added for AutoLayout.
     */
     func subview(forAutoLayout subview: UIView) {
         self.view.addSubview(subview)
@@ -35,11 +35,9 @@ public extension RSJViewDSL {
     }
 
     /**
-     Variadic version of subview(forAutoLayout subview:) method.
-
      Adds subviews and sets translatesAutoresizingMaskIntoConstraints to false.
 
-     - parameter subviews: The subviews to add and prepare for AutoLayout.
+     - Parameter subviews: The subviews to be added for AutoLayout.
     */
     func subviews(forAutoLayout subviews: UIView...) {
         self.subviews(forAutoLayout: subviews)
@@ -50,7 +48,7 @@ public extension RSJViewDSL {
 
      Adds subviews and sets translatesAutoresizingMaskIntoConstraints to false.
 
-     - parameter subviews: The subviews to add and prepare for AutoLayout.
+     - Parameter subviews: The subviews to be added for AutoLayout.
     */
     func subviews(forAutoLayout subviews: [UIView]) {
         subviews.forEach(self.subview)
@@ -63,7 +61,7 @@ public extension RSJViewDSL {
      More performant than setting maskToBounds to true when dealing with many subviews
      with rounded corners such as UICollectionView/UITableView oriented screens
 
-     - parameter value: The value used to set the UIView's cornerRadius.
+     - Parameter value: The value used to set the UIView's cornerRadius.
     */
     func cornerRadius(of value: CGFloat) {
         self.view.layer.cornerRadius = value
@@ -74,9 +72,9 @@ public extension RSJViewDSL {
 
 public extension UIView {
     /**
-     RSJViewDSL instance to access custom methods
+     RSJViewSpecific instance use to access custom methods
     */
-    var rsj: RSJViewDSL {
-        return RSJViewDSL(view: self)
+    var rsj: RSJViewSpecific {
+        return RSJViewSpecific(view: self)
     }
 }

@@ -13,13 +13,13 @@ import class UIKit.UIView
 */
 open class RSJView: UIView, RSJDebuggable {
     deinit {
-        self.logMessage()
+        self.log()
     }
 }
 
 public extension RSJDebuggable where Self: UIView {
 
-    func logMessage() {
+    func log() {
         print("\(type(of: self)) deallocated")
     }
 

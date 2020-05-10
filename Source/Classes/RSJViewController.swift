@@ -14,7 +14,7 @@ import class UIKit.UIViewController
 */
 open class RSJViewController: UIViewController, RSJDebuggable {
     deinit {
-        self.logMessage()
+        self.log()
     }
 }
 

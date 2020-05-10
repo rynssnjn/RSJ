@@ -12,19 +12,18 @@ import class Foundation.Scanner
 import struct Foundation.CharacterSet
 
 /**
- A DSL for UIColor to access custom methods
+ A A Domain Specific Language for UIColor to access custom methods
  */
-public struct RSJColorDSL {
+public struct RSJColorSpecific {
 
     // MARK: Instance Methods
     /**
      Convenience method for UIColor with an alpha of 1.0
 
-     - parameter red: red value for UIColor
-
-     - parameter green: green value for UIColor
-
-     - parameter blue: blue value for UIColor
+     - Parameters:
+        - red: red value of UIColor
+        - green: green value of UIColor
+        - blue: blue value of UIColor
     */
     public func color(red: UInt8, green: UInt8, blue: UInt8) -> UIColor {
         let red: CGFloat = CGFloat(red) / 255.0
@@ -36,7 +35,7 @@ public struct RSJColorDSL {
     /**
      Convenience method for UIColor with an alpha of 1.0.
      If the string contains less than 6 characters (excluding the '#'), this method will return UIColor.black
-     - parameter hexValue: Hex string value such as #FFFFFF
+     - Parameter hexValue: Hex string value such as #FFFFFF
     */
     public func color(hexValue: String) -> UIColor {
         var hexValue: String = hexValue.uppercased().trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
@@ -74,10 +73,10 @@ public struct RSJColorDSL {
 public extension UIColor {
 
     /**
-     RSJColorrDSL instance to access custom methods
+     RSJColorSpecific instance to access custom methods
     */
-    static var rsj: RSJColorDSL {
-        return RSJColorDSL()
+    static var rsj: RSJColorSpecific {
+        return RSJColorSpecific()
     }
 
 }

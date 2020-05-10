@@ -9,9 +9,9 @@
 import struct CoreGraphics.CGFloat
 
 /**
- A DSL for Int to access custom methods
+ A Domain Specific Language for Int to access custom methods
 */
-public struct RSJIntDSL {
+public struct RSJIntSpecific {
 
     // MARK: Stored Propeties
     /**
@@ -21,7 +21,7 @@ public struct RSJIntDSL {
 
 }
 
-public extension RSJIntDSL {
+public extension RSJIntSpecific {
 
     /**
      Integer as a String
@@ -118,9 +118,9 @@ public extension RSJIntDSL {
 public extension Int {
 
     /**
-     RSJIntDSL instance to access custom methods
+     RSJIntSpecific instance to access custom methods
     */
-    var rsj: RSJIntDSL {
-        return RSJIntDSL(int: self)
+    var rsj: RSJIntSpecific {
+        return RSJIntSpecific(int: self)
     }
 }

@@ -13,6 +13,6 @@ import class UIKit.UIActivityIndicatorView
 */
 open class RSJActivityIndicatorView: UIActivityIndicatorView, RSJDebuggable {
     deinit {
-        self.logMessage()
+        self.log()
     }
 }

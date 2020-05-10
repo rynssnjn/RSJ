@@ -9,9 +9,9 @@
 import struct CoreGraphics.CGFloat
 
 /**
- A DSL for Float to access custom methods
+ A Domain Specific Language for Float to access custom methods
  */
-public struct RSJFloatDSL {
+public struct RSJFloatSpecific {
 
     // MARK: Stored Propeties
     /**
@@ -21,7 +21,7 @@ public struct RSJFloatDSL {
 
 }
 
-public extension RSJFloatDSL {
+public extension RSJFloatSpecific {
 
     /**
      Float as a String
@@ -119,10 +119,10 @@ public extension RSJFloatDSL {
 public extension Float {
 
     /**
-     RSJFloatDSL instance to access custom methods
+     RSJFloatSpecific instance to access custom methods
      */
-    var rsj: RSJFloatDSL {
-        return RSJFloatDSL(float: self)
+    var rsj: RSJFloatSpecific {
+        return RSJFloatSpecific(float: self)
     }
 
 }
