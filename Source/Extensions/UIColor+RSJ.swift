@@ -25,10 +25,10 @@ public struct RSJColorSpecific {
         - green: green value of UIColor
         - blue: blue value of UIColor
     */
-    public func color(red: UInt8, green: UInt8, blue: UInt8) -> UIColor {
-        let red: CGFloat = CGFloat(red) / 255.0
-        let green: CGFloat = CGFloat(green) / 255.0
-        let blue: CGFloat = CGFloat(blue) / 255.0
+    public func color(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
+        let red: CGFloat = red / 255.0
+        let green: CGFloat = green / 255.0
+        let blue: CGFloat = blue / 255.0
         return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
 
