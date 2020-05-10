@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8E020F672467D10F00CAC024 /* RSJ.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E020F652467D10F00CAC024 /* RSJ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E020F702467D32B00CAC024 /* RSJ.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8E020F6F2467D32B00CAC024 /* RSJ.podspec */; };
+		8E020F732467D51600CAC024 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020F722467D51600CAC024 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E020F622467D10F00CAC024 /* RSJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E020F652467D10F00CAC024 /* RSJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSJ.h; sourceTree = "<group>"; };
 		8E020F662467D10F00CAC024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E020F6F2467D32B00CAC024 /* RSJ.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RSJ.podspec; sourceTree = "<group>"; };
+		8E020F722467D51600CAC024 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,7 +34,8 @@
 		8E020F582467D10F00CAC024 = {
 			isa = PBXGroup;
 			children = (
-				8E020F642467D10F00CAC024 /* RSJ */,
+				8E020F6E2467D2D900CAC024 /* Podspec Metadata */,
+				8E020F642467D10F00CAC024 /* Source */,
 				8E020F632467D10F00CAC024 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,13 +48,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8E020F642467D10F00CAC024 /* RSJ */ = {
+		8E020F642467D10F00CAC024 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8E020F712467D4FA00CAC024 /* Coordinators */,
+				8E020F6D2467D21400CAC024 /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8E020F6D2467D21400CAC024 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				8E020F652467D10F00CAC024 /* RSJ.h */,
 				8E020F662467D10F00CAC024 /* Info.plist */,
 			);
-			path = RSJ;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E020F6E2467D2D900CAC024 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				8E020F6F2467D32B00CAC024 /* RSJ.podspec */,
+			);
+			path = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8E020F712467D4FA00CAC024 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8E020F722467D51600CAC024 /* Coordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +125,7 @@
 				TargetAttributes = {
 					8E020F612467D10F00CAC024 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -121,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E020F702467D32B00CAC024 /* RSJ.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E020F732467D51600CAC024 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +293,7 @@
 		8E020F6B2467D10F00CAC024 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K2FYAR324D;
@@ -276,6 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rael.RSJ;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +319,7 @@
 		8E020F6C2467D10F00CAC024 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K2FYAR324D;
