@@ -86,6 +86,7 @@
 		8E020F582467D10F00CAC024 = {
 			isa = PBXGroup;
 			children = (
+				8E020F6F2467D32B00CAC024 /* RSJ.podspec */,
 				8E020F6E2467D2D900CAC024 /* Podspec Metadata */,
 				8E020F642467D10F00CAC024 /* Source */,
 				8E020F632467D10F00CAC024 /* Products */,
@@ -124,7 +125,6 @@
 		8E020F6E2467D2D900CAC024 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				8E020F6F2467D32B00CAC024 /* RSJ.podspec */,
 				8E020F792467DA9E00CAC024 /* LICENSE.md */,
 			);
 			path = "Podspec Metadata";
