@@ -4,14 +4,14 @@ Pod::Spec.new do |s|
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 s.name         = "RSJ"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "A toolset to make swift coding easier"
 
 s.homepage     = "https://github.com/rynssnjn/RSJ"
 
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.license      = "{ :type => "MIT", :file => "LICENSE.md" }"
+s.license      = "MIT"
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
