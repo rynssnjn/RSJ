@@ -1,44 +1,45 @@
-
 Pod::Spec.new do |s|
 
-# ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.name = "RSJ"
-s.version = "1.3.0"
-s.summary = "A toolset to make swift coding easier"
+  s.name         = "RSJ"
+  s.version      = "1.3.0"
+  s.summary      = "A toolset to make swift coding easier"
 
-s.homepage = "https://github.com/rynssnjn/RSJ"
+  s.homepage     = "https://github.com/rynssnjn/RSJ"
 
-# ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.license = "MIT"
+  s.license      = "MIT"
 
-# ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.author = { "Rael San Juan" => "rynssnjn.git@gmail.com" }
+  s.author             = { "Rael San Juan" => "rynssnjn.git@gmail.com" }
 
-# ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.platform = :ios, "9.3"
+  s.platform     = :ios, "9.3"
 
-#  When using multiple platforms
-s.ios.deployment_target = "9.3"
+  #  When using multiple platforms
+  s.ios.deployment_target = "9.3"
 
-# ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.source = { :git => 'https://github.com/rynssnjn/RSJ.git', :branch => 'master', :tag => s.version.to_s }
+  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-# ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  s.source       = { :git => "https://github.com/rynssnjn/RSJ.git", :tag => s.version.to_s }
 
-s.source_files = "Source/**/*.swift"
+  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-# ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  s.source_files  = "Source/**/*.swift"
 
-s.frameworks = "UIKit", "Foundation", "CoreGraphics"
+  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-# ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  s.frameworks = "UIKit", "Foundation", "CoreGraphics"
 
-s.requires_arc = true
-s.swift_version = '5.0'
+
+  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
+  s.requires_arc = true
+  s.swift_version = '5.0'
 
 end
