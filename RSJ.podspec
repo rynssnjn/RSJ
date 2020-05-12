@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 s.name         = "RSJ"
-s.version      = "1.2.0"
+s.version      = "1.3.0"
 s.summary      = "A toolset to make swift coding easier"
 
 s.homepage     = "https://github.com/rynssnjn/RSJ"
