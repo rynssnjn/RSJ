@@ -26,7 +26,7 @@ s.ios.deployment_target = "9.3"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.source = { :git => 'https://github.com/rynssnjn/RSJ.git', :tag => 's.version.to_s' }
+s.source = { :git => 'https://github.com/rynssnjn/RSJ.git', :tag => s.version.to_s }
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
