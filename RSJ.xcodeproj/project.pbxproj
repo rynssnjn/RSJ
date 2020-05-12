@@ -32,6 +32,7 @@
 		8E020FA62467E1EB00CAC024 /* Date+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */; };
 		8E020FA82467E22B00CAC024 /* CGRect+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */; };
 		8E020FAC2467E27E00CAC024 /* Bool+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */; };
+		8EF4AA41246AD03A007EF65A /* RSJ.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8EF4AA40246AD03A007EF65A /* RSJ.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+RSJ.swift"; sourceTree = "<group>"; };
+		8EF4AA40246AD03A007EF65A /* RSJ.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RSJ.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		8E020F582467D10F00CAC024 = {
 			isa = PBXGroup;
 			children = (
+				8EF4AA3F246AD02A007EF65A /* Podspec Metadata */,
 				8E020F642467D10F00CAC024 /* Source */,
 				8E020F632467D10F00CAC024 /* Products */,
 			);
@@ -164,6 +167,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		8EF4AA3F246AD02A007EF65A /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				8EF4AA40246AD03A007EF65A /* RSJ.podspec */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -234,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF4AA41246AD03A007EF65A /* RSJ.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
