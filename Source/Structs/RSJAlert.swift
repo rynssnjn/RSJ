@@ -25,7 +25,7 @@ public struct RSJAlert {
 }
 
 extension RSJAlert {
-    public func showAlert(firstAction: RSJAction, secondAction: RSJAction? = nil) {
+    public func showAlert(firstAction: RSJAlertAction, secondAction: RSJAlertAction? = nil) {
         let alert: UIAlertController = UIAlertController(
             title: self.title,
             message: self.message,
@@ -45,14 +45,14 @@ extension RSJAlert {
         self.vc.present(alert, animated: true, completion: nil)
     }
 
-    public func showActionSheet(actions: [RSJAction]) {
+    public func showActionSheet(actions: [RSJAlertAction]) {
         let alert: UIAlertController = UIAlertController(
             title: self.title,
             message: self.message,
             preferredStyle: UIAlertController.Style.actionSheet
         )
 
-        actions.forEach { (rsj: RSJAction) -> Void in
+        actions.forEach { (rsj: RSJAlertAction) -> Void in
             alert.addAction(
                 UIAlertAction(
                     title: rsj.title,
