@@ -83,5 +83,7 @@ extension RSJAlert {
                 )
             )
         }
+
+        self.vc.present(alert, animated: true, completion: nil)
     }
 }
