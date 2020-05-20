@@ -60,4 +60,28 @@ extension RSJAlert {
 
         self.vc.present(alert, animated: true, completion: nil)
     }
+
+    public func showActionSheet(actions: [(
+        title: String?,
+        style: UIAlertAction.Style?,
+        action: (() -> Void)?)]
+    ) {
+        let alert: UIAlertController = UIAlertController(
+            title: self.title,
+            message: self.message,
+            preferredStyle: UIAlertController.Style.actionSheet
+        )
+
+        actions.forEach { (action: (title: String?, style: UIAlertAction.Style?, action: (() -> Void)?)) -> Void in
+            alert.addAction(
+                UIAlertAction(
+                    title: action.title,
+                    style: action.style ?? UIAlertAction.Style.default,
+                    handler: { (_: UIAlertAction) -> Void in
+                        action.action?()
+                    }
+                )
+            )
+        }
+    }
 }
