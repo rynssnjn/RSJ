@@ -32,6 +32,7 @@
 		8E020FA62467E1EB00CAC024 /* Date+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */; };
 		8E020FA82467E22B00CAC024 /* CGRect+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */; };
 		8E020FAC2467E27E00CAC024 /* Bool+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */; };
+		8E624ECB24753624005908F9 /* RSJAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E624ECA24753624005908F9 /* RSJAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		8E020FA52467E1EB00CAC024 /* Date+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+RSJ.swift"; sourceTree = "<group>"; };
+		8E624ECA24753624005908F9 /* RSJAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSJAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		8E020F642467D10F00CAC024 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8E624EC9247535BF005908F9 /* Structs */,
 				8E020F922467DEF300CAC024 /* Extensions */,
 				8E020F7B2467DAD400CAC024 /* Classes */,
 				8E020F762467DA0D00CAC024 /* Protocols */,
@@ -162,6 +165,14 @@
 				8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E624EC9247535BF005908F9 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				8E624ECA24753624005908F9 /* RSJAlert.swift */,
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E020F9E2467E11200CAC024 /* Float+RSJ.swift in Sources */,
+				8E624ECB24753624005908F9 /* RSJAlert.swift in Sources */,
 				8E020F9C2467E05A00CAC024 /* Double+RSJ.swift in Sources */,
 				8E020F9A2467E01300CAC024 /* String+RSJ.swift in Sources */,
 				8E020FA22467E17A00CAC024 /* Int+RSJ.swift in Sources */,
