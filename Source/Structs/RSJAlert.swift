@@ -42,6 +42,18 @@ extension RSJAlert {
             )
         )
 
+        if let action = secondAction {
+            alert.addAction(
+                UIAlertAction(
+                    title: action.title,
+                    style: action.style,
+                    handler: { (_: UIAlertAction) -> Void in
+                        action.action?()
+                    }
+                )
+            )
+        }
+
         self.vc.present(alert, animated: true, completion: nil)
     }
 
