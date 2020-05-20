@@ -1,5 +1,5 @@
 //
-//  RSJAction.swift
+//  RSJAlertAction.swift
 //  RSJ
 //
 //  Created by Rael San Juan on 5/20/20.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit.UIAlertController
 
-public struct RSJAction {
+public struct RSJAlertAction {
 
     // MARK: Initializer
     public init(
