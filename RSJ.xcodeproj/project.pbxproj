@@ -33,6 +33,7 @@
 		8E020FA82467E22B00CAC024 /* CGRect+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */; };
 		8E020FAC2467E27E00CAC024 /* Bool+RSJ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */; };
 		8E624ECB24753624005908F9 /* RSJAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E624ECA24753624005908F9 /* RSJAlert.swift */; };
+		8E624ECE24754A43005908F9 /* RSJAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E624ECD24754A43005908F9 /* RSJAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		8E020FA72467E22B00CAC024 /* CGRect+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+RSJ.swift"; sourceTree = "<group>"; };
 		8E020FAB2467E27E00CAC024 /* Bool+RSJ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+RSJ.swift"; sourceTree = "<group>"; };
 		8E624ECA24753624005908F9 /* RSJAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSJAlert.swift; sourceTree = "<group>"; };
+		8E624ECD24754A43005908F9 /* RSJAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSJAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				8E624ECA24753624005908F9 /* RSJAlert.swift */,
+				8E624ECD24754A43005908F9 /* RSJAction.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				8E020F9C2467E05A00CAC024 /* Double+RSJ.swift in Sources */,
 				8E020F9A2467E01300CAC024 /* String+RSJ.swift in Sources */,
 				8E020FA22467E17A00CAC024 /* Int+RSJ.swift in Sources */,
+				8E624ECE24754A43005908F9 /* RSJAction.swift in Sources */,
 				8E020FAC2467E27E00CAC024 /* Bool+RSJ.swift in Sources */,
 				8E020F892467DD2F00CAC024 /* RSJViewController.swift in Sources */,
 				8E020F912467DEA200CAC024 /* DecodingErrorHandling.swift in Sources */,
